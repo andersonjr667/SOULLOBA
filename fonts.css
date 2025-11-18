@@ -1,0 +1,22 @@
+/* Importação das fontes personalizadas SOULLOBA */
+
+@font-face {
+    font-family: 'Classy Voguish';
+    src: url('Classy Voguish.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Catalina Village';
+    src: url('catalinavillageregular-aloym.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Fallback para fontes do sistema */
+:root {
+    --font-primary: 'Classy Voguish', 'Playfair Display', serif;
+    --font-secondary: 'Catalina Village', 'Inter', sans-serif;
+    --font-body: 'Inter', sans-serif;
+}
