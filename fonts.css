@@ -11,6 +11,7 @@
     src: url('fonts/catalinavillageregular-aloym.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -18,6 +19,7 @@
     src: url('fonts/Alegreya-Italic-VariableFont_wght.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
+    font-display: swap;
 }
 
 /* Fallback para fontes do sistema */
