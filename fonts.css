@@ -4,8 +4,7 @@
     font-family: 'Classy Voguish';
     src: url('fonts/Classy Voguish.otf') format('opentype');
     font-weight: normal;
-    font-style: normal;
-}
+    font-style: normal;  font-display: swap;}
 
 @font-face {
     font-family: 'Catalina Village';
