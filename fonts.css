@@ -14,9 +14,16 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Alegreya';
+    src: url('fonts/Alegreya-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
 /* Fallback para fontes do sistema */
 :root {
     --font-primary: 'Classy Voguish', 'Playfair Display', serif;
     --font-secondary: 'Catalina Village', 'Inter', sans-serif;
-    --font-body: 'Inter', sans-serif;
+    --font-body: 'Alegreya', 'Georgia', serif;
 }

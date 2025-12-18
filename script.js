@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Mobile Menu Toggle
     const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-    const nav = document.querySelector('header.hero nav');
+    const nav = document.querySelector('.main-nav');
     
-    if (mobileMenuToggle) {
+    if (mobileMenuToggle && nav) {
         mobileMenuToggle.addEventListener('click', function() {
             nav.classList.toggle('active');
             const icon = this.querySelector('i');
@@ -28,6 +28,20 @@ document.addEventListener('DOMContentLoaded', function() {
                     icon.classList.remove('fa-times');
                     icon.classList.add('fa-bars');
                 }
+            }
+        });
+    }
+    
+    // Header scroll effect
+    const header = document.querySelector('.main-header');
+    if (header) {
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                header.style.background = 'rgba(55, 57, 33, 0.99)';
+                header.style.boxShadow = '0 6px 25px rgba(55, 57, 33, 0.5)';
+            } else {
+                header.style.background = 'rgba(55, 57, 33, 0.97)';
+                header.style.boxShadow = '0 4px 20px rgba(55, 57, 33, 0.4)';
             }
         });
     }
