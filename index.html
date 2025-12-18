@@ -30,8 +30,10 @@
   <link rel="stylesheet" href="fonts.css">
   <link rel="stylesheet" href="styles.css">
   
-  <!-- Preload apenas da fonte principal usada no hero (acima da dobra) -->
+  <!-- Preload recursos críticos -->
   <link rel="preload" href="fonts/Classy_Voguish.otf" as="font" type="font/otf" crossorigin>
+  <link rel="preload" href="images/grupoterapeutico.jpg" as="image">
+  <link rel="preload" href="images/SOULLOBA-lOGO_PRIMARIO (1).png" as="image">
   
   <!-- Font Awesome carregado de forma assíncrona -->
   <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -256,6 +258,6 @@
     </div>
   </footer>
   
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
